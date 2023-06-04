@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/lightbox.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="desk">
+    <div class="head">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="./images/logo.svg" alt="logo" class="logo">
+      <div class="rsp-nav">
+
+        <div class="nav-item-wrap">
+          <img src="./images/icon-close.svg" class="closemb-icon">
+          <ul class="nav-items">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="cart-profile">
+      <a href="#" class="cart-icon-wrap">
+        <img src="./images/icon-cart.svg" alt="" class="cart">
+        <div class="cart-item-number">1</div>
+      </a>
+      <div class="profile-img-wrap">
+        <img src="./images/image-avatar.png" alt="" class="profile-img">
+
+      </div>
+    </div>
+  </nav>
+  <div class="cart-info">
+    <p class="cart-head"><strong>cart</strong>
+      <img src="./images/icon-close-orange.svg" alt="" class="close-cart">
+    </p>
+    <div class="line"></div>
+    <div class="cart-items">
+      <div class="update-product">
+        <p id="empty-cart"><strong>cart is empty</strong></p>
+      </div>
+      <div class="checkout-btn">check out</div>
+    </div>
+  </div>
+
+  <main>
+    <section id="product-preview">
+      <div class="wrapper ">
+
+
+
+        <div class="mobile img-wrap">
+          <div class=" slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="./images/image-product-3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="./images/image-product-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="./images/image-product-3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="./images/image-product-4.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+          </div>
+
+        </div>
+        <div class="img-wrap desktop">
+          <div class="preview-wrap">
+            <a href="./images/image-product-1.jpg" data-lightbox="images" data-title="1" class="main-img active-preview"
+              id="product-1-preview">
+              <img src="./images/image-product-1.jpg" alt="" class="preview-img">
+            </a>
+            <a href="./images/image-product-2.jpg" data-lightbox="images" data-title="2" class="main-img"
+              id="product-2-preview">
+              <img src="./images/image-product-2.jpg" alt="" class="preview-img">
+            </a>
+            <a href="./images/image-product-3.jpg" data-lightbox="images" data-title="3" class="main-img"
+              id="product-3-preview">
+              <img src="./images/image-product-3.jpg" alt="" class="preview-img">
+            </a>
+            <a href="./images/image-product-4.jpg" data-lightbox="images" data-title="4" class="main-img"
+              id="product-4-preview">
+              <img src="./images/image-product-4.jpg" alt="" class="preview-img">
+            </a>
+          </div>
+          <div class="thumbnail-wrap">
+            <input type="radio" name="thumbnails" id="product-1-thumbnail">
+            <label for="product-1-thumbnail" data-radio="#product-1" data-target="#product-1-preview"
+              class="img-thumbnail">
+              <img src="./images/image-product-1-thumbnail.jpg">
+            </label>
+            <input type="radio" name="thumbnails" id="product-2-thumbnail">
+            <label for="product-2-thumbnail" data-radio="#product-2" data-target="#product-2-preview"
+              class="img-thumbnail">
+              <img src="./images/image-product-2-thumbnail.jpg">
+            </label>
+            <input type="radio" name="thumbnails" id="product-3-thumbnail">
+            <label for="product-3-thumbnail" data-radio="#product-3" data-target="#product-3-preview"
+              class="img-thumbnail">
+              <img src="./images/image-product-3-thumbnail.jpg">
+            </label>
+            <input type="radio" name="thumbnails" id="product-4-thumbnail">
+            <label for="product-4-thumbnail" data-radio="#product-4" data-target="#product-4-preview"
+              class="img-thumbnail">
+              <img src="./images/image-product-4-thumbnail.jpg">
+            </label>
+          </div>
+        </div>
+        <div class="text">
+          <p class="company"> Sneaker Company
+          </p>
+          <h2> Fall Limited Edition Sneakers
+          </h2>
+          <p class="short-text"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they'll withstand everything the weather can offer.
+          </p>
+          <div class="sizes">
+            <div class="size-header">
+              <h3> size <span>[EU]</span></h3>
+              <div class="size-error">select a size</div>
+            </div>
+            <div class="size-btns">
+              <input type="radio" name="size-buttons" value="40" id="size40">
+              <label for="size40">40</label>
+              <input type="radio" name="size-buttons" value="41" id="size41">
+              <label for="size41">41</label>
+              <input type="radio" name="size-buttons" value="42" id="size42">
+              <label for="size42">42</label>
+              <input type="radio" name="size-buttons" value="43" id="size43">
+              <label for="size43">43</label>
+              <input type="radio" name="size-buttons" value="44" id="size44">
+              <label for="size44">44</label>
+              <input type="radio" name="size-buttons" value="45" id="size45">
+              <label for="size45">45</label>
+            </div>
+          </div>
+          <div class="price">
+            <h3>$125.00 <span class="discount">50%</span></h3>
+            <h4 class="old-price"> $250.00</h4>
+          </div>
+          <div class="cart-function">
+            <div class="product-counter">
+              <img src="./images/icon-minus.svg" alt="" id="minus-counter">
+              <p class="counter">1</p>
+              <img src="./images/icon-plus.svg" alt="" id="plus-counter">
+            </div>
+            <button type=" submit" class="add-to-cart">
+              <img src="./images/icon-cart copy.svg" alt="">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./js/lightbox-plus-jquery.js"></script>
+  <script src="./js/App.js"></script>
+</body>
+
+</html>
